@@ -1,0 +1,5 @@
+curl -H "Access-Token:ACCESS_TOKEN" \
+-H "Content-Type:multipart/form-data" \
+-F "image_file=@temp.png" -F "advertiser_id=ADVERTISER_ID" \
+-F "image_signature=MD_FIVE<openssl md5 temp.png>" -X POST \
+https://sandbox-ads.tiktok.com/open_api/v1.2/file/image/ad/upload/

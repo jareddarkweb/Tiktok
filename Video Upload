@@ -1,0 +1,8 @@
+curl --location --request POST 'https://sandbox-ads.tiktok.com/open_api/v1.2/file/video/ad/upload/' \
+--header 'Access-Token: ACCESS_TOKEN' \
+--header 'Content-Type: multipart/form-data' \
+--form 'advertiser_id=ADVERTISER_ID' \
+--form 'upload_type="UPLOAD_BY_FILE"' \
+--form 'video_file=@temp.mov' \
+--form 'file_name=temp.mov' \
+--form 'video_signature=MD_FIVE<openssl md5 temp.mov>'

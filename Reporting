@@ -1,0 +1,8 @@
+curl --get -H "Access-Token:ACCESS_TOKEN" \
+--data-urlencode "advertiser_id=ADVERTISER_ID" \
+--data-urlencode "dimensions=[\"adgroup_id\"]" \
+--data-urlencode "report_type=BASIC" \
+--data-urlencode "data_level=AUCTION_ADGROUP" \
+--data-urlencode "start_date=2021-01-01" \
+--data-urlencode "end_date=2021-12-31" \
+https://sandbox-ads.tiktok.com/open_api/v1.2/reports/integrated/get/
